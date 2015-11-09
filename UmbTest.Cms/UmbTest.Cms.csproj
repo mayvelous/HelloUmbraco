@@ -298,7 +298,18 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="App_Plugins\UmbTest.Plugins\Views\ContactFormSurface\Index.cshtml" />
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\Site.css" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="packages.config" />
+    <Content Include="scripts\bootstrap.js" />
+    <Content Include="scripts\bootstrap.min.js" />
+    <Content Include="scripts\fanoe.js" />
+    <None Include="scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="scripts\jquery-1.10.2.js" />
+    <Content Include="scripts\jquery-1.10.2.min.js" />
+    <Content Include="scripts\modernizr-2.6.2.js" />
     <Content Include="Views\Web.config" />
     <Content Include="Views\Partials\Grid\Editors\Textstring.cshtml" />
     <Content Include="Views\Partials\Grid\Editors\Rte.cshtml" />
@@ -325,6 +336,13 @@
     <Content Include="Config\BaseRestExtensions.config" />
     <Content Include="Config\applications.config" />
     <Content Include="Config\404handlers.config" />
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\ContactUs.cshtml" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="scripts\jquery-1.10.2.min.map" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -359,6 +377,24 @@
   <ItemGroup>
     <Compile Include="Class1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\UmbTest.Cms.Controllers\UmbTest.Cms.Controllers.csproj">
+      <Project>{ca634034-f5e1-4a1f-8fd6-926bd5680823}</Project>
+      <Name>UmbTest.Cms.Controllers</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UmbTest.Models\UmbTest.Models.csproj">
+      <Project>{c667f50b-af0f-4721-9b05-8fe4a679afc3}</Project>
+      <Name>UmbTest.Models</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UmbTest.Plugins\UmbTest.Plugins.csproj">
+      <Project>{ff0bc15a-707d-4d37-91aa-d4377a94ff50}</Project>
+      <Name>UmbTest.Plugins</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UmbTest.Services\UmbTest.Services.csproj">
+      <Project>{633cab3a-7e2b-4461-965e-a52358a4d545}</Project>
+      <Name>UmbTest.Services</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

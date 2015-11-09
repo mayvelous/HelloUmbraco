@@ -269,11 +269,22 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ContactFormSurfaceController.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\UmbTest.Models\UmbTest.Models.csproj">
+      <Project>{c667f50b-af0f-4721-9b05-8fe4a679afc3}</Project>
+      <Name>UmbTest.Models</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UmbTest.Services\UmbTest.Services.csproj">
+      <Project>{633cab3a-7e2b-4461-965e-a52358a4d545}</Project>
+      <Name>UmbTest.Services</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets" Condition="Exists('..\packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets')" />
