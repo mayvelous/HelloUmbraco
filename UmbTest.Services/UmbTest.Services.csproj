@@ -269,6 +269,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CommonService.cs" />
+    <Compile Include="HowToService.cs" />
+    <Compile Include="ICommonService.cs" />
+    <Compile Include="IHowToService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
